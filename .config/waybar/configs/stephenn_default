@@ -1,0 +1,53 @@
+//* ---- 💫 https://github.com/JaKooLit 💫 ---- *//
+/* Waybar Modules Extras */
+
+/* This is where you can add Extra Modules you wish. copy.sh will try to restore*/
+/* this file along with the unique configs and styles. */
+/* IMPORTANT, be mindful with , or ". else waybar will not start */
+
+{
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  ],
+
+"layer": "bottom",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+        //"idle_inhibitor",
+	"custom/menu",
+        "custom/separator#blank",
+        "clock",
+        "custom/separator#blank",
+        "tray",
+        ],
+
+"modules-center": [
+        "hyprland/workspaces#kanji",
+        ],
+
+"modules-right": [
+        //"mpris",
+        //"custom/separator#dot-line",
+	"group/notify",
+        "battery",
+        "custom/separator#blank",
+        "group/audio",
+        "custom/separator#blank",
+        "custom/power",
+	],	
+
+}
